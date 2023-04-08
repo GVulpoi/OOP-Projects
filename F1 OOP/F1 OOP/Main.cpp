@@ -10,7 +10,6 @@ int Start_Menu()
 	std::cout << "1. Choose a team" << std::endl;
 	std::cout << "2. See all teams" << std::endl;
 	std::cout << "3. Configure your team" << std::endl;
-	std::cout << "4. Overload test" << std::endl;
 	std::cout << "0. Exit" << std::endl;
 	std::cin >> input;
 	return input;
@@ -358,31 +357,6 @@ void choose_team(int aux)
 	}
 }
 
-void test_supraincarcare()
-{
-	std::cout << "Enter a price type int : ";
-	int aux;
-	std::cin >> aux;
-	IntVector Test;
-	Test = aux;
-	std::cout << "Enter a price that you want to add (int) : ";
-	int ent;
-	std::cin >> ent;
-	Test.add(ent);
-	std::cout << "New price : " << Test << std::endl;
-
-	std::cout << "Enter a price that you want to add (float) : ";
-	float flet;
-	std::cin >> flet;
-	Test.add(flet);
-	std::cout << "New price : " << Test << std::endl;
-
-	std::cout << "Enter a price that you want to add (double) : ";
-	double dable;
-	std::cin >> dable;
-	Test.add(dable);
-	std::cout << "New price : " << Test << std::endl;
-}
 
 int main()
 {
@@ -412,11 +386,6 @@ int main()
 		if (S_M == 3)
 		{
 			Custom_Team();
-		}
-
-		if (S_M == 4)
-		{
-			test_supraincarcare();
 		}
 	}
 }
