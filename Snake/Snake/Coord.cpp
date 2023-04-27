@@ -1,6 +1,13 @@
 #pragma once
 #include "Coord.hpp"
 
+Coord::Coord(int a , int b){
+	x = new int;
+	y = new int;
+	*x = a;
+	*y = b;
+	}
+
 Coord::Coord()
 {
 	x = new int;

@@ -5,8 +5,12 @@
 
 class Snake : public Body , public Head
 {
+protected:
 	int* score;
 public:
+
+	Snake(int a, int b) : Head(a, b) , score(new int) , Body() {}
+
 	Snake();
 
 	~Snake();

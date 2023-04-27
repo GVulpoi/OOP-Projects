@@ -4,10 +4,12 @@
 
 class Head : private Coord
 {
-private:
-	char* symbol;
+protected:
+	static const char symbol = 'A';
 public:
-	Head() : symbol(new char[1]){}
+	Head(int a , int b) : Coord(a,b) {}
+
+	Head() : Coord() {}
 
 	~Head();
 
@@ -28,8 +30,6 @@ public:
 	void setx(int a);
 
 	void sety(int a);
-
-	void setsym(char a);
 
 	char getsym();
 

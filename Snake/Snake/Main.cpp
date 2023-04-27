@@ -8,12 +8,10 @@
 
 int main()
 {
-	int left = 0 , right = 0 , down = 0 , up = 0;
-	Snake Snk;
+	int left = 0, right = 0, down = 0, up = 0, x = 0, y = 0;
+	Snake Snk(0 , 0);
 	Food F;
 	Out B;
-	Snk.setsym('A');
-	Snk.start();
 	while (TRUE)
 	{
 		if (GetKeyState(VK_LEFT) & 0x8000 && right == 0)

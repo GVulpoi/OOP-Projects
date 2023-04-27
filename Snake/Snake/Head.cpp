@@ -3,17 +3,11 @@
 
 Head::~Head()
 {
-	delete symbol;
-}
-
-void Head::setsym(char a)
-{
-	*symbol = a;
 }
 
 char Head::getsym()
 {
-	return *symbol;
+	return symbol;
 }
 
 void Head::up()

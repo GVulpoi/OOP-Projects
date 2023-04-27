@@ -7,6 +7,8 @@ private:
 	int* x;
 	int* y;
 public:
+	Coord(int a, int b);
+
 	Coord();
 
 	~Coord();
