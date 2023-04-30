@@ -13,5 +13,9 @@ public:
 
 	Snake();
 
+	void scoreadd();
+
+	int retscore();
+
 	~Snake();
 };

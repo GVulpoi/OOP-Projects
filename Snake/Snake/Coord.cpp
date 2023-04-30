@@ -62,8 +62,8 @@ int Coord::gety()
 
 void Coord::print()
 {
-	std::cout << "x = " << *x << std::endl;
-	std::cout << "y = " << *y << std::endl;
+	std::cout << "x = " << *x << " ";
+	std::cout << "y = " << *y << " ";
 }
 
 void Coord::setx(int a)

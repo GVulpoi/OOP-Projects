@@ -1,14 +1,14 @@
 #pragma once
 #include "Head.hpp"
-#include <vector>
+#include "Vector.hpp"
 #include <iostream>
 
 class Body
 {
 private:
 	int* length;
-	std::vector<int> bdyx;
-	std::vector<int> bdyy;
+	IntVector bdyx;
+	IntVector bdyy;
 public:
 	Body();
 

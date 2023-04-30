@@ -11,7 +11,7 @@ public:
 
 	Head() : Coord() {}
 
-	~Head();
+	virtual ~Head();
 
 	int getx();
 

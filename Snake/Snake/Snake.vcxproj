@@ -134,14 +134,17 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Output.cpp" />
     <ClCompile Include="Snake.cpp" />
+    <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Body.hpp" />
     <ClInclude Include="Coord.hpp" />
     <ClInclude Include="Food.hpp" />
+    <ClInclude Include="GameOver.hpp" />
     <ClInclude Include="Head.hpp" />
     <ClInclude Include="Output.hpp" />
     <ClInclude Include="Snake.hpp" />
+    <ClInclude Include="Vector.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

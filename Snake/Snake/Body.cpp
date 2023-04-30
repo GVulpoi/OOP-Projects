@@ -16,44 +16,35 @@ void Body::add(int x , int y)
 {
 	if (*length != 0)
 	{
-		bdyx.push_back(bdyx[(*length) - 1]);
-		bdyy.push_back(bdyy[(*length) - 1]);
-		*length = *length + 1;
+		bdyx.add(bdyx.retval(0));
+		bdyy.add(bdyy.retval(0));
 	}
 	else
 	{
-		bdyx.push_back(x);
-		bdyy.push_back(y);
-		*length = *length + 1;
+		bdyx.add(x);
+		bdyy.add(y);
 	}
+	*length = *length + 1;
 }
 
 void Body::move(int x, int y)
 {
-	if (*length != 0)
-	{
-		for (int i = 0; i < *length - 1; i++)
-		{
-			bdyx[i] = bdyx[i + 1];
-			bdyy[i] = bdyy[i + 1];
-		}
-		bdyx[*length - 1] = x;
-		bdyy[*length - 1] = y;
-	}
+	bdyx.move(x);
+	bdyy.move(y);
 }
 
 
 int Body::getvecx(int x)
 {
-	return bdyx[x];
+	return bdyx.retval(x);
 }
 
 int Body::getvecy(int x)
 {
-	return bdyy[x];
+	return bdyy.retval(x);
 }
 
 int Body::getlen()
 {
-	return *length;
+	return bdyx.retlen();
 }
