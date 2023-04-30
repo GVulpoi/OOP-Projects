@@ -32,6 +32,7 @@ IntVector::~IntVector()
 	if (data != NULL)
 	{
 		delete[] data;
+		delete size;
 	}
 }
 
@@ -115,7 +116,7 @@ std::istream& operator >>(std::istream& in, IntVector& v1)
 	if (v1.data != NULL)
 	{
 		delete[] v1.data;
-		v1.size = 0;
+		*v1.size = 0;
 	}
 
 	std::cout << "n = ";

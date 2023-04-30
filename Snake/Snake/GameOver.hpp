@@ -1,15 +1,11 @@
 #pragma once
 #include <iostream>
-#include <combaseapi.h>
 
-interface GameOver
+
+class GameOver
 {
 public:
 
-	virtual void GmOv(int x)
-	{
-		system("cls");
-		std::cout << "Game over !" << std::endl << "Score : " << x << std::endl;
-	}
+	virtual void GmOv(int x);
 
 };
