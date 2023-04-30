@@ -3,10 +3,10 @@
 
 class IntVector
 {
-	int size;
+	int* size;
 	int* data;
 public:
-	IntVector() : size(0), data(NULL) {}
+	IntVector();
 
 	IntVector(int x, int k = 0);
 

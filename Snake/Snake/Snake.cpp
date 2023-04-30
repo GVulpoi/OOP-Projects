@@ -3,8 +3,15 @@
 
 Snake::Snake()
 {
-	score = new int;
-	*score = 0;
+	try
+	{
+		score = new int;
+		*score = 0;
+	}
+	catch (const std::bad_alloc& e)
+	{
+		std::cout << "Alocare de memorie esuata !" << e.what() << std::endl;
+	}
 }
 
 void Snake::scoreadd()

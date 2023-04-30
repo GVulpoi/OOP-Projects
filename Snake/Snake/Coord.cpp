@@ -1,12 +1,20 @@
 #pragma once
 #include "Coord.hpp"
 
-Coord::Coord(int a , int b){
-	x = new int;
-	y = new int;
-	*x = a;
-	*y = b;
+Coord::Coord(int a , int b)
+{
+	try
+	{
+		x = new int;
+		y = new int;
+		*x = a;
+		*y = b;
 	}
+	catch (const std::bad_alloc& e)
+	{
+		std::cout << "Alocare de memorie esuata" << e.what() << std::endl;
+	}
+}
 
 Coord::Coord()
 {
