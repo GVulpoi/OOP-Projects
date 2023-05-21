@@ -4,8 +4,8 @@
 class Coord
 {
 private:
-	int* x;
-	int* y;
+	std::unique_ptr<int> x;
+	std::unique_ptr<int> y;
 public:
 	Coord(int a, int b);
 

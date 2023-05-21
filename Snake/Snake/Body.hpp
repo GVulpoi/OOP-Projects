@@ -7,8 +7,8 @@ class Body
 {
 private:
 	int* length;
-	IntVector bdyx;
-	IntVector bdyy;
+	IntVector<int> bdyx;
+	IntVector<int> bdyy;
 public:
 	Body();
 

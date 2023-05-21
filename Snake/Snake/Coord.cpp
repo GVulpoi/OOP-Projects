@@ -5,10 +5,8 @@ Coord::Coord(int a , int b)
 {
 	try
 	{
-		x = new int;
-		y = new int;
-		*x = a;
-		*y = b;
+		x = std::make_unique<int>(a);
+		y = std::make_unique<int>(b);
 	}
 	catch (const std::bad_alloc& e)
 	{
@@ -18,22 +16,16 @@ Coord::Coord(int a , int b)
 
 Coord::Coord()
 {
-	x = new int;
-	y = new int;
 	*x = 0;
 	*y = 0;
 }
 
 Coord::~Coord()
 {
-	delete x;
-	delete y;
 }
 
 void Coord::start(int a, int b)
 {
-	x = new int[1];
-	y = new int[1];
 	*x = a;
 	*y = b;
 }
